@@ -45,11 +45,11 @@ body {
     align-items: start;
   
 }
-.homepageimgcont img{
+/* .homepageimgcont img{
     max-width: 100%;
     height: 60vh;
     width: 100vw;
-}
+} */
 
  /* Setting Bigger Font size for large screens */
 @media (min-width: 992px) {
@@ -60,8 +60,20 @@ body {
     .maintext{
         padding-top: 100px;
     }
+    .mainpage img{
+        max-width: 100%;
+        height: 60vh;
+        width: 100vw;    }
 }
-
+@media (max-width: 768px) {
+    .d1 {
+      padding-top: 150px; /* Adjust the top margin as needed */
+    }
+  }
+  /* .move-down {
+    transform: translateY(75px);
+    transition: transform 0.5s ease;
+  } */
 .d1{
     padding-left: 5vw;
     background-color: rgb(255, 255, 255);
@@ -84,8 +96,12 @@ body {
 
 }
 .d3{
-    background-color: green;
-    height: 5vw;
+    padding-left: 5vw;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+    padding-top: 20px;
+    align-items: center;
 
 }
 
@@ -94,20 +110,17 @@ h1 {
     font-weight: 700;
     text-align: left;
 }
-
-
 h2{
     font-family: 'Givonic', sans-serif;
     font-weight: 700;
     font-size: 4rem;
     text-align: left;
 }
-
 h4 {
     font-family: 'Givonic', sans-serif;
     font-weight: 600 !important;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 } 
 h3 {
@@ -118,15 +131,29 @@ h3 {
 
 } 
 h5{
-    font-size: 1.5rem;
-
+    font-family: 'Givonic', sans-serif;
+    font-weight: 700 !important;
+    text-align: left;
+    font-size: 1rem;
 }
 
-
+.navbar-nav {
+    background-color: #fff; /* Set the background color as needed */
+  }
 .custom-font {
     font-family: 'Givonic', sans-serif;
     
     
+}
+
+.search-bar .input-group {
+    height: 3.5rem; /* Adjust the height as needed */
+  }
+.search-bar button{
+    height: 3.5rem;
+}
+.btn btn-outline-secondary{
+    min-width: 50px;
 }
 
 @font-face {

@@ -13,7 +13,21 @@
 
   <!-- Your custom stylesheet -->
   <link rel="stylesheet" href="style.css">
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbar = document.getElementById('navbarNav');
+  
+      navbar.addEventListener('show.bs.collapse', function () {
+        var d1 = document.getElementById('d1');
+        d1.style.paddingTop = '250px'; // You can adjust this value according to your needs
+      });
+  
+      navbar.addEventListener('hidden.bs.collapse', function () {
+        var d1 = document.getElementById('d1');
+        d1.style.paddingTop = '0px'; // Reset to your original value
+      });
+    });
+  </script>
 
 </head>
 
@@ -37,10 +51,13 @@
           <a class="nav-link" href="#d2">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#d3">Contact</a>
+          <a class="nav-link" href="#d3">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#d4">Contact</a>
         </li>
       </ul>
-      <div class="ms-auto">
+      <div class="ms-auto" style="background-color: white;">
         <button type="button" class="btn btn-outline-primary">Login</button>
         <button type="button" class="btn btn-outline-primary" style="margin-right: 30px;">Signup</button>
       </div>
@@ -49,7 +66,7 @@
 </nav>
 
 
-
+<div class="mainpage">
 
   <div class="d1" id="d1">
     <div class="container-fluid maintextcont">
@@ -67,7 +84,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 homepageimgcont">
-          <img src="images/model1.png" alt="model1" class="model1">
+          <img src="images/model1.png" alt="model1" class="model1 img-fluid">
         </div>
       </div>
     </div>
@@ -86,20 +103,20 @@
           <br>
 
           <h3 class="fs-md-4 fs-lg-3 custom-font">Effortless Search</h3>
-          <h5 class = "fs-md-4 fs-lg-3 custom-font">Easily browse through a variety of room listings in your desired location.</h5>
+          <h4 class = "fs-md-4 fs-lg-3 custom-font">Easily browse through a variety of room listings in your desired location.</h4>
           
           <br>
 
           <h3 class="fs-md-4 fs-lg-3 custom-font">Direct Communication</h3>
-          <h5 class = "fs-md-4 fs-lg-3 custom-font">Connect directly with room owners through our secure and user-friendly messaging system.</h5>
+          <h4 class = "fs-md-4 fs-lg-3 custom-font">Connect directly with room owners through our secure and user-friendly messaging system.</h4>
           
           <br>
           <h3 class="fs-md-4 fs-lg-3 custom-font">Detailed Listings</h3>
-          <h5 class = "fs-md-4 fs-lg-3 custom-font">Explore comprehensive room details, including high-quality photos, amenities, and rental information.</h5>
+          <h4 class = "fs-md-4 fs-lg-3 custom-font">Explore comprehensive room details, including high-quality photos, amenities, and rental information.</h4>
           <br>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 homepageimgcont">
-          <img src="images/model2.png" alt="model1" class="model1">
+          <img src="images/model2.png" alt="model1" class="model1 img-fluid">
         </div>
       </div>
     </div>
@@ -107,7 +124,78 @@
 
 
 
-  <div class="d3" id="d3"> </div>
+  <div class="d3" id="d3">
+    <div class="container-fluid explore-cont">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h2 class="fs-md-4 fs-lg-2 custom-font text-center">Explore Roomiee</h2>
+          <br>
+          <h3 class="fs-md-4 fs-lg-2 custom-font text-center">Find Your Ideal Living Space</h3>
+          <br>
+          <h4 class="fs-md-4 fs-lg-3 custom-font text-center"> Welcome to Roomiee's Explore page, where your perfect
+            room awaits!<br>
+            Discover a variety of available rooms for rent or sharing in your preferred area.</h4>
+          <form class="search-bar">
+            <div class="input-group mb-3 col-lg-8 col-md-8 col-sm-12">
+              <input type="text" class="form-control" placeholder="Search for rooms...">
+              
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Type
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Rent</a>
+                  <a class="dropdown-item" href="#">Sharing</a>
+                  
+                  <!-- Add more filters as needed -->
+                </div>
+              </div>
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  City
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Filter 1</a>
+                  <a class="dropdown-item" href="#">Filter 2</a>
+                  <a class="dropdown-item" href="#">Filter 3</a>
+                  <!-- Add more filters as needed -->
+                </div>
+              </div>
+
+              
+              <button class="btn btn-outline-secondary" type="button">Search</button>
+
+
+              
+            </div>
+          </form>
+          <br>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <img src="images/model3.png" alt="Explore Image" class="explore-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="d4">
+  <img src="thumbnail-image.jpg" alt="Thumbnail" class="thumbnail">
+    <div class="details">
+      <div class="location">Location: City, State</div>
+      <div class="type">Type: Single Room / Entire Apartment</div>
+      <div class="rent">Rent: ₹12,000 per month</div>
+      <div class="amenities">Amenities: Furnished, Kitchen Access, Wi-Fi</div>
+      <div class="description">
+        Description: Discover your cozy haven in the heart of...
+      </div>
+      <div class="buttons">
+        <button class="button view-details">View Details</button>
+        <button class="button contact-owner">Contact Owner</button>
+        <button class="button save-to-favorites">Save to Favorites</button>
+      </div>
+    </div>
+</div>
 
   <!-- Include jQuery and Bootstrap JS at the end of the body -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"
@@ -115,6 +203,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>
