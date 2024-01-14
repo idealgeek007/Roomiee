@@ -1,10 +1,10 @@
 
- *{
+ /* *{
      background: #000000 !important; 
     color: #0f0 !important;
     outline: solid #f10000 3px !important;
   }
-  
+   */
 body {
     width: 100%;
     height: 100%;
@@ -12,7 +12,7 @@ body {
     padding: 0px;
     overflow-x: hidden;
 }
-
+/* Navigation Bar Thene */
 .navbar{
     padding-left: 20px;
     display: flex;
@@ -24,53 +24,110 @@ body {
     height: 75px;
 
 }
+
+/* HeadingText */
 .maintext{
     font-family: 'Givonic', sans-serif;
-    font-weight: 900 !important; /* Bold */ 
-    padding-top: 50px;
+    font-weight: bold; /* Bold */ 
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;    
+}
+.smalltextcont{
+    font-family: 'Givonic', sans-serif;
+    font-weight: 400 !important; /* Bold */
 }
 
+.homepageimgcont{
+    justify-content: center;
+    align-items: start;
+  
+}
+.homepageimgcont img{
+    max-width: 100%;
+    height: 60vh;
+    width: 100vw;
+}
+
+ /* Setting Bigger Font size for large screens */
+@media (min-width: 992px) {
+    h1{
+        font-size: 96px;
+        font-weight: 700;           
+    }
+    .maintext{
+        padding-top: 100px;
+    }
+}
 
 .d1{
-    padding-left: 20px;
-    background-color: gray;
-    height: 100vh;
+    padding-left: 5vw;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    height: max-content;
     padding-top: 75px; 
     display: grid;
     justify-content: center;
-    grid-template-columns: 2fr 1fr;
+    align-items: center;
 
     
 }
 .d2{
-    background-color: blue;
-    height: 100vh;
+    padding-left: 5vw;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+    padding-top: 20px;
+    align-items: center;
 
 }
 .d3{
     background-color: green;
-    height: 100vh;
+    height: 5vw;
 
 }
 
 h1 {
-    max-width: 50vw;
     font-family: 'Givonic', sans-serif;
     font-weight: 700;
-    font-size: 5vw; /* Adjust as needed */
     text-align: left;
 }
 
+
+h2{
+    font-family: 'Givonic', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Givonic', sans-serif;
+    font-weight: 600 !important;
+    text-align: left;
+    font-size: 1.5rem;
+
+} 
 h3 {
     font-family: 'Givonic', sans-serif;
-    font-weight: 700;
-    font-size: 2vw; /* Adjust as needed */
+    font-weight: 700 !important;
     text-align: left;
-    max-width: 50vw;
+    font-size: 2rem;
+
+} 
+h5{
+    font-size: 1.5rem;
 
 }
 
 
+.custom-font {
+    font-family: 'Givonic', sans-serif;
+    
+    
+}
 
 @font-face {
     font-family: 'Givonic';
