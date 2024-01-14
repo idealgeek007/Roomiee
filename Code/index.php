@@ -28,6 +28,7 @@
       });
     });
   </script>
+  
 
 </head>
 
@@ -58,7 +59,7 @@
         </li>
       </ul>
       <div class="ms-auto" style="background-color: white;">
-        <button type="button" class="btn btn-outline-primary">Login</button>
+        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='login/loginpage.php'">Login</button>
         <button type="button" class="btn btn-outline-primary" style="margin-right: 30px;">Signup</button>
       </div>
     </div>
@@ -128,11 +129,11 @@
     <div class="container-fluid explore-cont">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-8 col-md-8 col-sm-12">
-          <h2 class="fs-md-4 fs-lg-2 custom-font text-center">Explore Roomiee</h2>
+          <h2 class="fs-md-4 fs-lg-2 custom-font text-left">Explore Roomiee</h2>
           <br>
-          <h3 class="fs-md-4 fs-lg-2 custom-font text-center">Find Your Ideal Living Space</h3>
+          <h3 class="fs-md-4 fs-lg-2 custom-font text-left">Find Your Ideal Living Space</h3>
           <br>
-          <h4 class="fs-md-4 fs-lg-3 custom-font text-center"> Welcome to Roomiee's Explore page, where your perfect
+          <h4 class="fs-md-4 fs-lg-3 custom-font text-left"> Welcome to Roomiee's Explore page, where your perfect
             room awaits!<br>
             Discover a variety of available rooms for rent or sharing in your preferred area.</h4>
           <form class="search-bar">
@@ -190,7 +191,7 @@
         Description: Discover your cozy haven in the heart of...
       </div>
       <div class="buttons">
-        <button class="button view-details">View Details</button>
+        <button class="button view-details ">View Details</button>
         <button class="button contact-owner">Contact Owner</button>
         <button class="button save-to-favorites">Save to Favorites</button>
       </div>

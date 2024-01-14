@@ -104,6 +104,15 @@ body {
     align-items: center;
 
 }
+.d4{
+    padding-left: 5vw;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+    padding-top: 20px;
+    align-items: center;
+
+}
 
 h1 {
     font-family: 'Givonic', sans-serif;
@@ -142,6 +151,8 @@ h5{
   }
 .custom-font {
     font-family: 'Givonic', sans-serif;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
     
     
 }
@@ -206,5 +217,20 @@ h5{
   }
 
 
-  /* h1 style */
+/* Animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
 
