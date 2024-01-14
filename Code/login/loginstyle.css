@@ -59,8 +59,8 @@
     color: #003569;
     font-size: 14px;
     text-decoration: none;
-    font-family: 'Overpass Mono', monospace;
-    letter-spacing: -1px;
+    font-family: 'Givonic', sans-serif;
+    letter-spacing: 1px;
   }
   
   .btn {
@@ -85,9 +85,9 @@
   
   .s-part {
     text-align: center;
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'Givonic', sans-serif;
     word-spacing: -3px;
-    letter-spacing: -2px;
+    letter-spacing: 2px;
     font-weight: normal;
   }
   
@@ -95,12 +95,12 @@
     text-decoration: none;
     cursor: pointer;
     color: #3897f0;
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'Givonic', sans-serif;
     word-spacing: -3px;
-    letter-spacing: -2px;
+    letter-spacing: 2px;
     font-weight: normal;
   }
   
   input:focus {
-      background-color: yellow;
+      background-color: lightblue;
   }

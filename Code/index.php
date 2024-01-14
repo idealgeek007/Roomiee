@@ -58,9 +58,22 @@
           <a class="nav-link" href="#d4">Contact</a>
         </li>
       </ul>
-      <div class="ms-auto" style="background-color: white;">
-        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='login/loginpage.php'">Login</button>
-        <button type="button" class="btn btn-outline-primary" style="margin-right: 30px;">Signup</button>
+
+      <?php
+            session_start();
+            if (isset($_SESSION['username'])) {
+                // User is logged in, show a different set of buttons or nothing
+            } else {
+                // User is not logged in, show login and signup buttons
+                ?>
+                <div class="ms-auto" style="background-color: white;">
+                     <button type="button" class="btn btn-outline-primary" onclick="window.location.href='login/loginpage.php'">Login</button>
+                    <button type="button" class="btn btn-outline-primary" style="margin-right: 30px;">Signup</button>
+                </div>
+                <?php
+            }
+            ?>
+     
       </div>
     </div>
   </div>
